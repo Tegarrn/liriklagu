@@ -40,5 +40,9 @@ int main() {
     std::vector<double> speeds = {0.08, 0.09, 0.08, 0.08, 0.09, 0.08};
     std::vector<double> delays = {0.3, 1.5, 1.0, 0.5, 1.3, 0.3};
 
-    
+    for (int i = 0; i < lyrics.size(); ++i) {
+        sing_lyric(lyrics[i], delays[i], speeds[i], 0, colors[i % colors.size()]);
+    }
+
+    return 0;
 }
